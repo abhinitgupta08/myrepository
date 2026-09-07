@@ -1,48 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Consulting, Operations & Product</title>
+  <title>Abhinit Gupta | Consulting & Operations Specialist</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
+  </style>
 </head>
-<body class="bg-[#0d1117] text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between p-6 sm:p-12">
-  <main class="max-w-3xl mx-auto w-full my-auto space-y-8">
-    <div class="space-y-2">
-      <span class="text-xs font-mono text-blue-400 uppercase tracking-widest">Executive Portfolio</span>
-      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white">
-        Consulting · Operations · Product Management
-      </h1>
-      <p class="text-lg text-slate-400 pt-2 leading-relaxed">
-        Building scalable operating models, optimizing cross-functional processes, and leading outcome-driven digital products.
-      </p>
-    </div>
+<body class="font-sans antialiased selection:bg-blue-600 selection:text-white">
 
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
-      <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
-        <div class="text-2xl font-bold text-white">Strategy</div>
-        <div class="text-xs text-slate-400 mt-1">Business advisory, KPI architecture & process transformation.</div>
-      </div>
-      <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
-        <div class="text-2xl font-bold text-white">Operations</div>
-        <div class="text-xs text-slate-400 mt-1">Cross-functional execution, workflow automation & scale.</div>
-      </div>
-      <div class="p-4 rounded-xl bg-slate-900 border border-slate-800">
-        <div class="text-2xl font-bold text-white">Product</div>
-        <div class="text-xs text-slate-400 mt-1">Discovery, roadmap execution & lifecycle management.</div>
-      </div>
-    </div>
-
-    <div class="pt-4 flex flex-wrap gap-4 items-center">
-      <a href="mailto:your-email@example.com" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium transition">
-        Get in Touch
+  <!-- Sticky Executive Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0d1117]/85 border-b border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-semibold text-base tracking-tight text-white flex items-center gap-2">
+        <span>Abhinit Gupta</span>
+        <span class="text-xs font-mono text-slate-400 font-normal">| Strategy & Operations</span>
       </a>
-      <span class="text-xs font-mono text-slate-500">Case studies & deep-dives launching shortly.</span>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-400">
+        <a href="#experience" class="hover:text-white transition-colors">01 In Practice</a>
+        <a href="#competencies" class="hover:text-white transition-colors">02 Competencies</a>
+        <a href="#initiatives" class="hover:text-white transition-colors">03 Initiatives</a>
+        <a href="#credentials" class="hover:text-white transition-colors">04 Credentials</a>
+        <a href="https://www.linkedin.com/in/abhinit-gupta-3a4a79192" target="_blank" rel="noopener noreferrer" class="px-4 py-1.5 rounded-full text-xs font-medium bg-blue-600 hover:bg-blue-500 text-white transition">
+          Connect
+        </a>
+      </nav>
     </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-16 space-y-24">
+
+    <!-- Hero Section -->
+    <section class="space-y-8 pt-4">
+      <div class="space-y-4">
+        <span class="text-xs font-mono tracking-wider text-blue-400 uppercase font-semibold">
+          Hello, I'm Abhinit Gupta
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15] max-w-4xl">
+          I bridge business needs and operational reality to drive sustainable organizational performance.
+        </h1>
+        <p class="text-slate-400 text-lg sm:text-xl font-normal max-w-3xl leading-relaxed pt-2">
+          Consulting & Operations Specialist translating unstructured business requirements into disciplined workflows, cross-functional alignment, and scalable delivery pipelines.
+        </p>
+      </div>
+
+      <!-- Action CTAs -->
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="https://www.linkedin.com/in/abhinit-gupta-3a4a79192" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium transition">
+          <i data-lucide="linkedin" class="w-4 h-4"></i> Connect on LinkedIn
+        </a>
+        <a href="#experience"
+           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-medium border border-slate-700 transition">
+          <i data-lucide="briefcase" class="w-4 h-4"></i> View Case Studies
+        </a>
+      </div>
+
+      <!-- Metric Proof Banner -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-10 border-t border-slate-800/80">
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+          <div class="text-3xl font-extrabold text-white tracking-tight">20%</div>
+          <div class="text-sm font-semibold text-slate-300 mt-1">TAT Reduction</div>
+          <div class="text-xs text-slate-500 mt-0.5">Streamlined cross-team onboarding pipelines</div>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+          <div class="text-3xl font-extrabold text-white tracking-tight">+25%</div>
+          <div class="text-sm font-semibold text-slate-300 mt-1">Operational Capacity</div>
+          <div class="text-xs text-slate-500 mt-0.5">Unlocked throughput without adding headcount</div>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+          <div class="text-3xl font-extrabold text-white tracking-tight">9/10</div>
+          <div class="text-sm font-semibold text-slate-300 mt-1">Sustained CSAT</div>
+          <div class="text-xs text-slate-500 mt-0.5">Across 200+ enterprise implementations</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 · In Practice (Case Studies) -->
+    <section id="experience" class="space-y-10">
+      <div>
+        <span class="text-xs font-mono text-blue-400 font-semibold tracking-wider uppercase">01 · In Practice</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mt-1">
+          Strategic Interventions & Measurable Results
+        </h2>
+      </div>
+
+      <div class="space-y-8">
+        
+        <!-- Case Study 1: Plum Benefits -->
+        <article class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800/80 pb-5">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 text-xs font-mono text-blue-400 bg-blue-950/70 border border-blue-800/50 rounded">
+                Operations & Team Leadership
+              </span>
+              <h3 class="text-xl font-bold text-white mt-2">
+                Operational Turnaround & Upstream Handoff Architecture
+              </h3>
+              <p class="text-xs text-slate-400">Plum Benefits Insurance Brokers · Team Lead (Customer Success)</p>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-white">20% Faster</span>
+              <p class="text-xs text-slate-500">Go-live turnaround time</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="space-y-2">
+              <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider">The Bottlenecks</h4>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Implementation timelines lagged due to unclear cross-team ownership, siloed communication, and unstructured sales-to-ops handoffs that created data discrepancies, insurer rejections, and delayed policy issuance.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider">The Strategic Work</h4>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Created unified real-time tracking threads for full accountability, introduced simple data validation checks at ingestion, leveraged business volume commitments to compress insurer SLA delays, and mentored 10+ direct reports on independent issue resolution.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-xs font-mono text-blue-400 uppercase tracking-wider">The Result</h4>
+              <p class="text-sm text-white font-medium leading-relaxed">
+                Reduced onboarding turnaround by 20%, boosted overall delivery capacity by 25% with zero additional resources, maintained a 9/10 CSAT across 200+ clients, and drove a 10% account expansion lift.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded">Root Cause Analysis</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded">Cross-Functional Alignment</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded">SLA Optimization</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded">Excel Data Validation</span>
+          </div>
+        </article>
+
+        <!-- Case Study 2: BYJU'S -->
+        <article class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800/80 pb-5">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 text-xs font-mono text-blue-400 bg-blue-950/70 border border-blue-800/50 rounded">
+                Product Experience & Retention
+              </span>
+              <h3 class="text-xl font-bold text-white mt-2">
+                User Drop-Off Remediation & Feedback Infrastructure
+              </h3>
+              <p class="text-xs text-slate-400">BYJU'S · Student Success Specialist</p>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-white">85%</span>
+              <p class="text-xs text-slate-500">Repeat course retention</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="space-y-2">
+              <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider">The Bottlenecks</h4>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Learner churn was driven by compounding tech friction—inconsistent processor stability and storage constraints on learning tablets—which damaged engagement and caused avoidable dropout spikes.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider">The Strategic Work</h4>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Synthesized qualitative user friction logs and diagnostic device telemetry into prioritized issue queues for the engineering team; designed proactive guidance playbooks to stabilize the end-user learning experience.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-xs font-mono text-blue-400 uppercase tracking-wider">The Result</h4>
+              <p class="text-sm text-white font-medium leading-relaxed">
+                Influenced over 800+ active learners, mitigated high-friction dropout triggers, and locked an 85% repeat course retention rate through rapid product issue resolution.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded">Retention Strategy</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded">Cross-Functional Bug Prioritization</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded">Customer Experience</span>
+          </div>
+        </article>
+
+        <!-- Case Study 3: CampusFlow -->
+        <article class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800/80 pb-5">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 text-xs font-mono text-blue-400 bg-blue-950/70 border border-blue-800/50 rounded">
+                Product Architecture
+              </span>
+              <h3 class="text-xl font-bold text-white mt-2">
+                CampusFlow: End-to-End Student Lifecycle System
+              </h3>
+              <p class="text-xs text-slate-400">Great Lakes Institute of Management · Academic Initiative</p>
+            </div>
+            <div class="text-right">
+              <span class="text-2xl font-extrabold text-white">100%</span>
+              <p class="text-xs text-slate-500">Journey unified in single portal</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="space-y-2">
+              <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider">The Bottlenecks</h4>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Fragmented administrative touchpoints required students to navigate disconnected channels for documentation, grievance ticketing, and departmental approvals.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider">The Strategic Work</h4>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Mapped every institutional touchpoint from admission to graduation and engineered a unified no-code application on Lovable Pro, integrating cross-department points of contact into automated ticketing workflows.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-xs font-mono text-blue-400 uppercase tracking-wider">The Result</h4>
+              <p class="text-sm text-white font-medium leading-relaxed">
+                Eliminated manual administrative friction points, simplified student grievance resolution paths, and validated an agile, deployable product architecture.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/80">
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded">No-Code Architecture (Lovable Pro)</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded">Journey Mapping</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded">Workflow Automation</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 02 · Core Competencies -->
+    <section id="competencies" class="space-y-8">
+      <div>
+        <span class="text-xs font-mono text-blue-400 font-semibold tracking-wider uppercase">02 · Core Competencies</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mt-1">
+          Strategic Focus & Execution Disciplines
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-mono text-slate-500">01</span>
+            <h3 class="text-base font-bold text-white">Process Optimization & Re-engineering</h3>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Eliminating bottlenecks in cross-functional handoffs, standardizing operational playbooks, and converting manual steps into scalable workflows.
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-2">
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">SLA Management</span>
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">Workflow Mapping</span>
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">Turnaround Time Optimization</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-mono text-slate-500">02</span>
+            <h3 class="text-base font-bold text-white">Stakeholder Management & Consulting</h3>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Leading consultative client dialogues, establishing rigorous business cases backed by error data, and aligning internal sales, ops, and external partners.
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-2">
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">Requirement Gathering</span>
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">Change Management</span>
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">Client Communication</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-mono text-slate-500">03</span>
+            <h3 class="text-base font-bold text-white">Product & Technology Alignment</h3>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Translating ground-level operational problems into prioritized feature requests for technical teams, reducing user friction and driving software adoption.
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-2">
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">Product Discovery</span>
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">Agile Sprints</span>
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">User Journey Mapping</span>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="text-xs font-mono text-slate-500">04</span>
+            <h3 class="text-base font-bold text-white">Data Validation & Decision Making</h3>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Using structured data verification, advanced spreadsheet mechanics, and SQL/CRM systems to stop errors at ingestion and safeguard delivery margins.
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-2">
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">Advanced Excel</span>
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">SQL</span>
+            <span class="px-2 py-0.5 text-xs bg-slate-800 text-slate-300 rounded">CRM Infrastructure</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · Beyond the Core Work -->
+    <section id="initiatives" class="space-y-8">
+      <div>
+        <span class="text-xs font-mono text-blue-400 font-semibold tracking-wider uppercase">03 · Beyond the Work</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mt-1">
+          Leadership & Community Initiatives
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 space-y-2">
+          <span class="text-xs font-mono text-blue-400 uppercase">Institutional Role</span>
+          <h3 class="text-base font-bold text-white">Alumni Committee Member</h3>
+          <p class="text-xs text-slate-400">Great Lakes Institute of Management, Gurgaon (2026–27)</p>
+          <p class="text-xs text-slate-500 pt-1">Driving institutional outreach, networking channels, and strategic alumni alignment.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 space-y-2">
+          <span class="text-xs font-mono text-blue-400 uppercase">Social Impact</span>
+          <h3 class="text-base font-bold text-white">Karma Yoga Team Lead</h3>
+          <p class="text-xs text-slate-400">Government School Development Initiative (2026)</p>
+          <p class="text-xs text-slate-500 pt-1">Led a 6-member team in designing and delivering welfare and learning programs for school children.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 space-y-2">
+          <span class="text-xs font-mono text-blue-400 uppercase">Community Work</span>
+          <h3 class="text-base font-bold text-white">Snehashraya Foundation</h3>
+          <p class="text-xs text-slate-400">Active Volunteer · Bengaluru (2025)</p>
+          <p class="text-xs text-slate-500 pt-1">Organized donation drives and community support initiatives.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · Education & Credentials -->
+    <section id="credentials" class="space-y-8">
+      <div>
+        <span class="text-xs font-mono text-blue-400 font-semibold tracking-wider uppercase">04 · Credentials</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight mt-1">
+          Academic Foundation & Certifications
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <span class="text-xs font-mono text-blue-400 uppercase">Management Education</span>
+          <h3 class="text-lg font-bold text-white">Post Graduate Certificate in Management (PGCM)</h3>
+          <p class="text-sm text-slate-300">Great Lakes Institute of Management, Gurgaon</p>
+          <p class="text-xs text-slate-500">Focus on Strategy, Operations & Business Consulting</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <span class="text-xs font-mono text-blue-400 uppercase">Technical Degree</span>
+          <h3 class="text-lg font-bold text-white">Bachelor of Computer Applications (BCA)</h3>
+          <p class="text-sm text-slate-300">Institute of Management & Technology, MDU</p>
+          <p class="text-xs text-slate-500">Database Systems, Logic Design, System Architecture</p>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-mono text-blue-400 uppercase">Professional Certifications</span>
+          <div class="text-sm font-semibold text-white mt-1">Diploma in Product Management · Agile Analytics and AI (Allison)</div>
+          <div class="text-xs text-slate-400">Excel Data Foundations (Great Learning)</div>
+        </div>
+        <div class="text-xs font-mono text-slate-500">
+          Academic Achievements: 2nd Runner-up, Policy Tamasha (2026) · Clue-less (2026)
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Direct Contact -->
+    <footer class="pt-16 border-t border-slate-800 text-center space-y-6">
+      <div class="space-y-2">
+        <h2 class="text-3xl font-bold text-white">Let's have a meaningful conversation.</h2>
+        <p class="text-sm text-slate-400 max-w-lg mx-auto">
+          Open to management consulting, strategic operations leadership, and digital transformation roles.
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center gap-6 pt-2">
+        <a href="https://www.linkedin.com/in/abhinit-gupta-3a4a79192" target="_blank" rel="noopener noreferrer"
+           class="text-sm text-slate-300 hover:text-white inline-flex items-center gap-1.5 transition">
+          <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i> LinkedIn
+        </a>
+      </div>
+
+      <div class="text-xs text-slate-600 pt-8">
+        © 2026 Abhinit Gupta · Consulting & Operations Portfolio
+      </div>
+    </footer>
+
   </main>
 
-  <footer class="max-w-3xl mx-auto w-full text-xs text-slate-600 border-t border-slate-800/80 pt-6">
-    © 2026 · Consulting & Product Strategy Portfolio
-  </footer>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
 </body>
 </html>
+```[cite: 1, 2]
